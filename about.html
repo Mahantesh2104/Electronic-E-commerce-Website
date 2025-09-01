@@ -1,0 +1,168 @@
+{% extends "base.html" %}
+
+{% block content %}
+<!-- About Hero Section -->
+<div class="about-hero py-5" style="margin-top: -1.5rem;">
+    <div class="container my-5">
+        <div class="row align-items-center">
+            <div class="col-lg-6" data-aos="fade-right">
+                <h1 class="display-4 fw-bold mb-4 text-white">About Our Electronic Shop</h1>
+                <p class="lead text-white opacity-90">Discover the latest in electronic innovation with our curated selection of premium devices and accessories.</p>
+            </div>
+            <div class="col-lg-6" data-aos="fade-left">
+                <img src="{{ url_for('static', filename='images/about-hero.jpg') }}" alt="About Us" class="img-fluid rounded-3 shadow-lg">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Our Story Section -->
+<div class="container py-5">
+    <div class="row g-5">
+        <div class="col-lg-6" data-aos="fade-up">
+            <h2 class="display-6 mb-4">Our Story</h2>
+            <p class="lead text-muted">We started with a simple mission: to make quality electronics accessible to everyone.</p>
+            <p class="mb-4">Our journey began with a passion for technology and a commitment to customer satisfaction. Today, we're proud to offer a wide range of electronic products from the world's leading brands, all backed by our exceptional service and support.</p>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="stats-card">
+                        <div class="stats-number">10K+</div>
+                        <p class="text-muted mb-0">Happy Customers</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="stats-card">
+                        <div class="stats-number">5K+</div>
+                        <p class="text-muted mb-0">Products</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="stats-card">
+                        <div class="stats-number">24/7</div>
+                        <p class="text-muted mb-0">Support</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="card border-0 shadow-lg why-choose-card">
+                <div class="card-body p-5">
+                    <h3 class="mb-4">Why Choose Us?</h3>
+                    <div class="d-flex align-items-center mb-4">
+                        <div class="icon-circle me-3">
+                            <i class="fas fa-check"></i>
+                        </div>
+                        <div>
+                            <h5 class="mb-1">Quality Products</h5>
+                            <p class="text-muted mb-0">We source only the best products from trusted manufacturers.</p>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center mb-4">
+                        <div class="icon-circle me-3">
+                            <i class="fas fa-truck"></i>
+                        </div>
+                        <div>
+                            <h5 class="mb-1">Fast Delivery</h5>
+                            <p class="text-muted mb-0">Quick and reliable shipping to your doorstep.</p>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <div class="icon-circle me-3">
+                            <i class="fas fa-headset"></i>
+                        </div>
+                        <div>
+                            <h5 class="mb-1">Expert Support</h5>
+                            <p class="text-muted mb-0">Our team is here to help you 24/7.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Team Section -->
+<div class="container-fluid bg-light py-5">
+    <div class="container">
+        <h2 class="text-center display-6 mb-5" data-aos="fade-up">Our Team</h2>
+        <div class="row g-4">
+            <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                <div class="team-card">
+                    <img src="{{ url_for('static', filename='images/team1.jpg') }}" class="card-img-top" alt="Team Member">
+                    <div class="card-body text-center p-4">
+                        <h5 class="card-title mb-1">John Doe</h5>
+                        <p class="text-muted">CEO & Founder</p>
+                        <div class="social-links mt-3">
+                            <a href="#" class="text-muted me-2"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="text-muted me-2"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                <div class="team-card">
+                    <img src="{{ url_for('static', filename='images/team2.jpg') }}" class="card-img-top" alt="Team Member">
+                    <div class="card-body text-center p-4">
+                        <h5 class="card-title mb-1">Jane Smith</h5>
+                        <p class="text-muted">Operations Manager</p>
+                        <div class="social-links mt-3">
+                            <a href="#" class="text-muted me-2"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="text-muted me-2"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                <div class="team-card">
+                    <img src="{{ url_for('static', filename='images/team3.jpg') }}" class="card-img-top" alt="Team Member">
+                    <div class="card-body text-center p-4">
+                        <h5 class="card-title mb-1">Mike Johnson</h5>
+                        <p class="text-muted">Tech Expert</p>
+                        <div class="social-links mt-3">
+                            <a href="#" class="text-muted me-2"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="text-muted me-2"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                <div class="team-card">
+                    <img src="{{ url_for('static', filename='images/team4.jpg') }}" class="card-img-top" alt="Team Member">
+                    <div class="card-body text-center p-4">
+                        <h5 class="card-title mb-1">Sarah Wilson</h5>
+                        <p class="text-muted">Customer Support</p>
+                        <div class="social-links mt-3">
+                            <a href="#" class="text-muted me-2"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="text-muted me-2"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Call to Action -->
+<div class="container py-5">
+    <div class="cta-section">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 text-center" data-aos="fade-up">
+                <h2 class="display-6 mb-4">Ready to Shop?</h2>
+                <p class="lead text-muted mb-4">Explore our wide range of electronic products and find exactly what you need.</p>
+                <a href="{{ url_for('index') }}#product-cards" class="btn btn-primary btn-lg cta-button">Shop Now</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+    // Initialize AOS with custom settings
+    AOS.init({
+        duration: 800,
+        once: true,
+        offset: 100
+    });
+</script>
+{% endblock %}
